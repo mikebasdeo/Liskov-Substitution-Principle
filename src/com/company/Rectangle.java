@@ -27,13 +27,21 @@ public class Rectangle {
         this.height = newWidth;
     }
 
-    public int getWidth() {
+    public int getWidth()
+    {
         return width;
     }
 
-    public int getHeight() {
+    public int getHeight()
+    {
         return height;
     }
+
+    public int calculateArea(Rectangle rectangle){
+        Integer area = rectangle.getHeight() * rectangle.getWidth();
+        return area;
+    }
+
 
     @Override
     public String toString() {
