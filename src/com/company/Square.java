@@ -24,6 +24,6 @@ public class Square extends Rectangle{
 
     @Override
     public String toString() {
-        return "SQUARE:   Width = " + this.getWidth() + "  Height = " + this.getHeight();
+        return "SQUARE:   Width = " + this.getWidth() + "  Height = " + this.getHeight() + " Area = " + calculateArea(this);
     }
 }

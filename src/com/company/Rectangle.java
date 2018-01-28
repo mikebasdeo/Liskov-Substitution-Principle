@@ -45,6 +45,6 @@ public class Rectangle {
 
     @Override
     public String toString() {
-        return "RECTANGLE:   Width = " + width + "  Height = " + height;
+        return "RECTANGLE:   Width = " + width + "  Height = " + height + " Area = " + calculateArea(this);
     }
 }
