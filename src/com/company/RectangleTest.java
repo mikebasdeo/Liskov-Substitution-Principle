@@ -15,7 +15,6 @@ public class RectangleTest {
 
         Rectangle rTest = new Rectangle(5,10);
         assertEquals(50, rTest.calculateArea(rTest));
-
     }
 
     @Test
@@ -24,8 +23,16 @@ public class RectangleTest {
         System.out.println("Testing Square Area");
         Square sTest = new Square(7);
         assertEquals(49, sTest.calculateArea(sTest));
+    }
 
-
+    @Test
+    public void testRectangleFromSquare()
+    {
+        System.out.println("Testing rectangle from instance of square");
+        Rectangle s2 = new Square(7);
+        s2.setHeight(6);
+        s2.setWidth(7);
+        assertEquals(42, s2.calculateArea(s2));
     }
 
 }
