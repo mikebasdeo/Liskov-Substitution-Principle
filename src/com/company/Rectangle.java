@@ -17,10 +17,26 @@ public class Rectangle {
 
 
     //methods
+    public void setHeight(Integer newHeight)
+    {
+        this.height = newHeight;
+    }
 
+    public void setWidth(Integer newWidth)
+    {
+        this.height = newWidth;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
 
     @Override
     public String toString() {
-        return "Width = " + width + "\nHeight = " + height;
+        return "RECTANGLE:   Width = " + width + "  Height = " + height;
     }
 }
