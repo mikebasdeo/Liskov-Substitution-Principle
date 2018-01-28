@@ -11,6 +11,15 @@ public class Square extends Rectangle{
     }
 
     //methods
+    public void setHeight(Integer height){
+        super.setHeight(height);
+        super.setWidth(height);
+    }
+
+    public void setWidth(Integer width){
+        super.setHeight(width);
+        super.setWidth(width);
+    }
 
 
     @Override
